@@ -31,7 +31,11 @@ const Category = () => {
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>
-              <CategorySliderItem item={item} />
+              <CategorySliderItem
+                image={item.src}
+                alt={item.alt}
+                name={item.name}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

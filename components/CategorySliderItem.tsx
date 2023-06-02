@@ -1,12 +1,22 @@
 import Image from "next/image";
 import Overlay from "./Overlay";
 
-const CategorySliderItem = ({ item }: any) => {
+interface CategorySliderItemProps {
+  image: string;
+  alt: string;
+  name: string;
+}
+
+const CategorySliderItem: React.FC<CategorySliderItemProps> = ({
+  image,
+  alt,
+  name,
+}) => {
   return (
     <div className="w-full h-full relative">
       <Image
-        src={item.src}
-        alt={item.alt}
+        src={image}
+        alt={alt}
         width={400}
         height={500}
         priority
@@ -14,7 +24,7 @@ const CategorySliderItem = ({ item }: any) => {
       />
       <Overlay />
       <div className="absolute z-[2] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center">
-        <h3 className="text-2xl font-semibold tracking-wider">{item.name}</h3>
+        <h3 className="text-2xl font-semibold tracking-wider">{name}</h3>
       </div>
     </div>
   );
