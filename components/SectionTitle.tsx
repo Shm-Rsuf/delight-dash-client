@@ -5,11 +5,12 @@ interface SectionTitleProps {
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ subTitle, title }) => {
   return (
-    <div className="wrapper text-center pb-10">
+    <div className="animate wrapper text-center pb-10 relative">
       <span className="uppercase font-semibold tracking-widest text-primary">
         {subTitle}
       </span>
-      <h3 className="text-3xl">{title}</h3>
+      <h3 className="text-3xl capitalize">{title}</h3>
+      <span className="underline"></span>
     </div>
   );
 };

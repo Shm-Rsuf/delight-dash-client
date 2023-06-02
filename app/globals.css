@@ -24,3 +24,13 @@
 .swiper-pagination-bullet-active {
   background-color: #00ffd5 !important;
 }
+
+.underline::before {
+  position: absolute;
+  content: "";
+  transform: translate(-50%, -50%);
+  width: 10%;
+  height: 3px;
+  background-color: #00ffd5;
+  margin-top: 0.5rem;
+}
