@@ -12,17 +12,17 @@
     background-color: rgba(255, 255, 255, 0.5);
     right:10px;
     padding: 30px; */
-  color: #00ffd5 !important;
-  fill: #00ffd5 !important;
-  stroke: #00ffd5 !important;
+  color: #38bdf8 !important;
+  fill: #38bdf8 !important;
+  stroke: #38bdf8 !important;
 }
 
 .swiper-pagination-bullet {
-  background-color: rgba(0, 255, 213, 0.5) !important;
+  background-color: #38bdf8 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #00ffd5 !important;
+  background-color: #38bdf8 !important;
 }
 
 .underline::before {
@@ -31,6 +31,6 @@
   transform: translate(-50%, -50%);
   width: 10%;
   height: 3px;
-  background-color: #00ffd5;
+  background-color: #14141494;
   margin-top: 0.5rem;
 }

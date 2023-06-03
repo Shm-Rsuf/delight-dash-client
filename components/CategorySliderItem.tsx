@@ -24,7 +24,7 @@ const CategorySliderItem: React.FC<CategorySliderItemProps> = ({
       />
       <Overlay />
       <div className="absolute z-[2] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-center">
-        <h3 className="text-2xl font-semibold tracking-wider">{name}</h3>
+        <h3 className="text-3xl font-semibold tracking-widest">{name}</h3>
       </div>
     </div>
   );
